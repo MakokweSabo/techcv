@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CV.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+      <asp:ContentPlaceHolder ID="Title" runat="server">
+      </asp:ContentPlaceHolder>
+
+    </title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="menu">
+                <ul>
+                    <li  class="navigation_first_item"  ><a href="Default.aspx">HOME</a></li>
+                    <li><a href="About.aspx">ABOUT ME</a></li>
+                    <li><a href="RESUME.aspx">RESUME</a></li>
+                    <li><a href="SKILLS.aspx">SKILLS</a></li>
+                </ul>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            </div>
+            <div class="clear"></div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentBody" runat="server">
+                </asp:ContentPlaceHolder>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            </div>
+            <div class="clear"></div>
+            <div class="footer">
+                <br />
+                <h2>Copyright@LM.com</h2>
+            </div>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </div>
+    </form>
+</body>
+</html>
